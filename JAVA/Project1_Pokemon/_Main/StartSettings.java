@@ -40,13 +40,30 @@ class MyPokemon{
     public static void setMyPoSpeed(int myPoSpeed) {
         MyPoSpeed = myPoSpeed;
     }
-
     static List<Pokemon> pokemonList = new ArrayList<>();
+    static List<Pokemon> pokemonList_level2 = new ArrayList<>();
+    static List<Pokemon> pokemonList_level3 = new ArrayList<>();
 
-    public void startPokemon(){
+    public static void Pokemon_settings(){
         pokemonList.add(new Pairi("파이리",80,95));
         pokemonList.add(new Ggobugi("꼬부기",70,75));
         pokemonList.add(new IsanghaeSeed("이상해씨",85,85));
+
+        pokemonList_level2.add(new Lizard("리자드",95,115));
+        pokemonList_level2.add(new Anibugi("어니부기",100,80));
+        pokemonList_level2.add(new IsanghaeGrass("이상해풀",100,85));
+
+        pokemonList_level3.add(new Lizamong("리자몽",115,130));
+        pokemonList_level3.add(new GgobuckKing("거북왕",120,100));
+        pokemonList_level3.add(new IsanghaeFlower("이상해꽃",125,90));
+
+    }
+
+
+
+
+    public void startPokemon(){
+        Pokemon_settings();
         System.out.println("오박사 :  자네와 함께할 친구는 " + pokemonList.get(StartSettings.getChoice()).getName() + "이다!");
         System.out.println("오박사 :  자! 즐거운 여행을 하고오거라!");
         setMyPoName(pokemonList.get(StartSettings.getChoice()).getName());
@@ -122,7 +139,5 @@ public class StartSettings {
         int choice = sc.nextInt();
         setChoice(choice);
     }
-
-
 
 }
