@@ -1,6 +1,6 @@
 public class PokemonGame {
     public static void main(String[] args) {
-
+/*
         StartSettings s1= new StartSettings();
         MyPokemon m1 = new MyPokemon();
         Adventure a1 = new Adventure();
@@ -9,5 +9,7 @@ public class PokemonGame {
         m1.startPokemon();
         a1.WildPoAppear();
 
+*/
+        Menu.menu();
     }
 }
