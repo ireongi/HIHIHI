@@ -33,6 +33,7 @@ public class Menu {
                     }
 
                 } else if (menuPick == 2) {
+<<<<<<< HEAD
                     System.out.println("★☆★☆★☆★☆★☆★☆포켓몬 병원★☆★☆★☆★☆★☆");
 
 
@@ -41,6 +42,8 @@ public class Menu {
                 }
 
                 else if (menuPick == 4) {
+=======
+>>>>>>> e696e875f83706e0538555c24b1e1f8c7205dfaa
                     System.out.println("   종료하겠습니다^^ 정말로 종료하실 건가요?");
                     System.out.println("   이것은 세이브가 안되는 1회용 게임입니다.");
                     System.out.println("★★★★★★★★★★★종료합니다★★★★★★★★★★★");
